@@ -30,7 +30,19 @@ public class HackerRank_problem_solve_8
 //        else
 //            System.out.println("good night");
 
-
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n<12 && 1<=n) {
+            System.out.println("good morning");
+        } else if (n >= 12 && n <= 16) {
+            System.out.println("good afternoon");
+        } else if (n > 16 && n <= 20) {
+            System.out.println("good evening");
+        }else if (20 < n && n < 24) {
+            System.out.println("good night");
+        }else {
+            System.out.println("invalid input");
+        }
 
     }
 }
