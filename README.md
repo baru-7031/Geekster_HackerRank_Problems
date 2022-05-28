@@ -1,0 +1,3 @@
+# Geekster_HackerRank_Problems
+This Repository for java practice and i have completed All the assignment program... i hope you like it   
+This Repository for Core java Problem solving Array program Sorting Patterns.....
