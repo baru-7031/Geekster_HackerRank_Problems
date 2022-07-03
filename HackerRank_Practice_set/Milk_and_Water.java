@@ -9,32 +9,31 @@ public class Milk_and_Water
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-
+        int[] arr = new int[N];
         int[] arr1 = new int[N];
 
-        for (int i = 0; i<arr1.length;i++)
+
+        for (int i =0; i<arr.length;i++)
         {
-            arr1[i] = sc.nextInt();
+            arr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i<arr1.length;i++)
+        int j=0;
+        for (int i =0; i<N;i++)
         {
-            for (int j =1; j<arr1.length;j++)
+            if (arr[i]<0)
             {
-                if (0<arr1[j])
-                {
-                    int temp = arr1[j];
-                    arr1[j] = arr1[j-1];
-                    arr1[j-1] = temp;
-                }
+                arr1[j] = arr[i];
+                j++;
+            }
+        }
 
-//                if (0<arr1[j])
-//                {
-//                    int temp = arr1[j];
-//                    arr1[j] = arr1[j+1];
-//                    arr1[j+1] = temp;
-//                }
-
+        for (int i =0; i<N;i++)
+        {
+            if (arr[i]>0)
+            {
+                arr1[j] = arr[i];
+                j++;
             }
         }
         for (int x : arr1)
